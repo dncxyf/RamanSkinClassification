@@ -122,5 +122,4 @@ ds = load_bacteria_id_subset()  # 需下载数据至 data/raw/bacteria_id/
 
 ### 聚类结论
 
-KMeans / GMM 聚类效果有限（ARI < 0.2），说明拉曼光谱的类别结构不是简单的球形分布。
-实际应用中，拉曼分类应以监督方法（PLS-DA、SVM）为主。
+在同时使用PCA+峰数据时，聚类效果较好。消融实验显示，远好于单独PCA（接近随机）和单独峰数据。
